@@ -1,27 +1,27 @@
 class Meow < Formula
-  desc "Push notifications and quick replies for AI agents"
+  desc "Push notifications for AI agents"
   homepage "https://github.com/AmazingAng/meow"
-  version "0.1.1"
+  version "0.1.2"
 
   on_macos do
     on_arm do
-      url "https://github.com/AmazingAng/meow/releases/download/v0.1.1/meow_0.1.1_darwin_arm64.tar.gz"
-      sha256 "f2c58c0dcf0a64c1371adc32a3f55101c0521aaf51939fd810dade4d152edf0b"
+      url "https://github.com/AmazingAng/meow/releases/download/v0.1.2/meow_0.1.2_darwin_arm64.tar.gz"
+      sha256 "d4a22acc1e39f2361a0791f20d316c3868a31ea9717d3660b0ede907802ca8d2"
     end
     on_intel do
-      url "https://github.com/AmazingAng/meow/releases/download/v0.1.1/meow_0.1.1_darwin_amd64.tar.gz"
-      sha256 "b5ee8eadf6b351ab8f38448fe3c18380e84926f7812c9992ff8fa7debdebed28"
+      url "https://github.com/AmazingAng/meow/releases/download/v0.1.2/meow_0.1.2_darwin_amd64.tar.gz"
+      sha256 "f735dbbaf3e0ca155cee7f991027b4487ca73ab0b444ca759260d360fb50bd41"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/AmazingAng/meow/releases/download/v0.1.1/meow_0.1.1_linux_arm64.tar.gz"
-      sha256 "2642fabefac1a534f723d9160a9d52092cf7167150bd3ad2aa73cf944b088c84"
+      url "https://github.com/AmazingAng/meow/releases/download/v0.1.2/meow_0.1.2_linux_arm64.tar.gz"
+      sha256 "8c2a88369f43a9adec7a7bd8bacad5e290d54722714f222ec95c2c1a858dd304"
     end
     on_intel do
-      url "https://github.com/AmazingAng/meow/releases/download/v0.1.1/meow_0.1.1_linux_amd64.tar.gz"
-      sha256 "5b625110cf8f04bb46c96aee621c41984c30ec8108ecda4648b9c567ca331876"
+      url "https://github.com/AmazingAng/meow/releases/download/v0.1.2/meow_0.1.2_linux_amd64.tar.gz"
+      sha256 "720a29767ff8521f0dbfb49235aa1f96e106a86225e42bf491e8b174711f6922"
     end
   end
 
@@ -30,6 +30,6 @@ class Meow < Formula
   end
 
   test do
-    assert_match "0.1.1", shell_output("#{bin}/meow --version")
+    assert_match "0.1.2", shell_output("#{bin}/meow --version")
   end
 end
