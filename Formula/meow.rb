@@ -1,27 +1,27 @@
 class Meow < Formula
   desc "Push notifications for AI agents"
   homepage "https://github.com/AmazingAng/meow"
-  version "0.1.8"
+  version "0.1.9"
 
   on_macos do
     on_arm do
-      url "https://github.com/AmazingAng/meow/releases/download/v0.1.8/meow_0.1.8_darwin_arm64.tar.gz"
-      sha256 "fd3572a52929a7231d9686e501f534fd61f3510cb9f5fa4e19bfd591f13100cd"
+      url "https://github.com/AmazingAng/meow/releases/download/v0.1.9/meow_0.1.9_darwin_arm64.tar.gz"
+      sha256 "17dfc1ac98b730c562c04935162b2ee0e4ebbdef92a45c944e9ddd2891d01d2d"
     end
     on_intel do
-      url "https://github.com/AmazingAng/meow/releases/download/v0.1.8/meow_0.1.8_darwin_amd64.tar.gz"
-      sha256 "baa0d8bac9f5e3a95463cf286b60183b5a1168938d95c76eb62cce899fe48607"
+      url "https://github.com/AmazingAng/meow/releases/download/v0.1.9/meow_0.1.9_darwin_amd64.tar.gz"
+      sha256 "8ffff7fe69a721702d55cb03305f4ef72e3f31c4b68cf36b0325a0a0685865ab"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/AmazingAng/meow/releases/download/v0.1.8/meow_0.1.8_linux_arm64.tar.gz"
-      sha256 "cfbdea0c67d873552c53b155f9b3868ba495352667d28a915a6cad8f9eadfef3"
+      url "https://github.com/AmazingAng/meow/releases/download/v0.1.9/meow_0.1.9_linux_arm64.tar.gz"
+      sha256 "ec3d3dfede9c2c119ec81e0effab0ae054d105403c13605f0583050104b69d32"
     end
     on_intel do
-      url "https://github.com/AmazingAng/meow/releases/download/v0.1.8/meow_0.1.8_linux_amd64.tar.gz"
-      sha256 "fbd395432b8bd77daa64e37eeb6a8e9c77bb2d2a3e643572301e158892305bdc"
+      url "https://github.com/AmazingAng/meow/releases/download/v0.1.9/meow_0.1.9_linux_amd64.tar.gz"
+      sha256 "1420c5c037b3fd984cf47c406ff73722c05bb250dc6db689dac748d1105189a8"
     end
   end
 
@@ -30,6 +30,6 @@ class Meow < Formula
   end
 
   test do
-    assert_match "0.1.8", shell_output("#{bin}/meow --version")
+    assert_match "0.1.9", shell_output("#{bin}/meow --version")
   end
 end
